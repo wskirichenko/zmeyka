@@ -1,0 +1,42 @@
+header {
+	width: 800px;
+	margin: 0 auto;
+	background-color: blue;
+	height: 5vh;
+	margin-bottom: 5px;
+}
+
+#matrix {
+	display: grid;
+	grid-template-columns: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
+	grid-template-rows: 4vh 4vh 4vh 4vh 4vh 4vh 4vh 4vh 4vh 4vh 4vh 4vh 4vh 4vh 4vh 4vh 4vh 4vh 4vh 4vh;
+	width: 800px;
+	margin: 0 auto;
+}
+
+#matrix .cell {
+	background-color: gray;
+	margin: 1px;
+} 
+
+.target {
+	background-color: red;
+}
+
+footer {
+	background-color: #6cf;
+	text-align: center;
+	height: 5vh;
+	font-size: 1.5em; 
+	margin-top: 5px;
+}
+
+#matrix .on {
+	background-color: red;
+	margin: 1px;
+} 
+
+#matrix .targ {
+	background-color: blue;
+	margin: 1px;
+} 
