@@ -35,18 +35,21 @@ window.onload = function () {
 	};
 };
 
+	function clearField() {
+		for (var i = 1; i <= 20; i++) {
+			for (var j = 1; j <= 20; j++) {
+				setCell(i, j, false);
+			};	
+		};
+	}
+
 	function key_down () {
 		var e = event.keyCode;
 		console.log(e);
 	};
 
 function move (c, c2, row, col, n1, targRow, targCol) {
-	for (var i = 1; i <= 20; i++) {
-		for (var j = 1; j <= 20; j++) {
-			setCell(i, j, false);
-		};	
-	};	
-
+	clearField();
 	setCell(row + c2,	col + c,	true);
 	getTarget(targRow, targCol);
 	findTarget(row + c2, col + c, targRow, targCol);
